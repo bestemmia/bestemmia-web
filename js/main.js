@@ -10,7 +10,7 @@ $(document).ready(function(){
       data.pop();
       $.each( data, function( i, item ) {
         if(item.author){
-            $("#textMachine").append( "<div><img style=\"height:60px;\" src=\""+item.author.avatar_url+"\" />"+i+item.commit.message+"</div>" );
+            $("#textMachine").append( "<div><img style=\"height:60px;\" src=\""+item.author.avatar_url+"\" />"+item.commit.message+"</div>" );
         }
       });
 	  $("#textMachine").slotMachine({
